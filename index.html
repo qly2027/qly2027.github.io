@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>我的GitHub主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 恭喜！</h1>
+        <p>你的 GitHub Pages 主页已经成功运行！</p>
+        <p>这是一个最简单的测试页面。</p>
+        <p>现在你可以开始自定义这个页面了。</p>
+        <p>当前时间: <span id="datetime"></span></p>
+    </div>
+
+    <script>
+        // 显示当前日期时间
+        var dt = new Date();
+        document.getElementById('datetime').innerHTML = dt.toLocaleString();
+        
+        // 简单的交互效果
+        document.querySelector('.container').addEventListener('click', function() {
+            alert('页面点击生效！JavaScript 运行正常！');
+        });
+    </script>
+</body>
+</html>
